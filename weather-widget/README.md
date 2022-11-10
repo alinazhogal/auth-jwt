@@ -21,6 +21,7 @@ This section should show the latest weather information if the selected day is t
     + Icon for the overall weather
     + The highest/lowest temperature
 <weather-module-farenheit>
+
 4. User can change the unit measurement system
      between Metric and Imperial system by clicking
      at the F / C link beside the current temperature
@@ -29,10 +30,13 @@ This section should show the latest weather information if the selected day is t
     + Imperial system uses Farenheit (F) for temperature
        and miles per hour (MPH) for wind speed
 <weather-module-select-day>
+
 5. User can view the weather forecast for a specific
      day in the future by clicking at a cell at the bottom
     + The highest temperature in the selected day (except for the current day) should be displayed at the place of the current temperature (the biggest text beside the F / C link). If the current day is selected, then display the current temperature (not the highest temp.)
 
 Use url http://api.openweathermap.org/geo/1.0/direct?q={city}&limit=5&appid={api_key} to get city latitude and longitude.
+
 Use https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&&units=metric&appid={api_key} to get the current weather and 7 days weather broadcast of the city by latitude and longitude. Example of the response you can find on https://openweathermap.org/api/one-call-api.
+
 Use http://openweathermap.org/img/wn/10d@2x.png url to get weather icon, where ‘10d’ - icon code from the weather response.
