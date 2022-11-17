@@ -4,7 +4,7 @@
         "es2021": true
     },
     "extends": [
-        "eslint:recommended",
+      "eslint:recommended",
 	  "plugin:react/recommended",
 	  "plugin:@typescript-eslint/recommended",
 	  "prettier"
@@ -24,9 +24,7 @@
     "prettier/prettier": "error",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
-    "react/prop-types": "off",
-    "simple-import-sort/imports": "error",
-    "simple-import-sort/exports": "error"
+    "react/prop-types": "off"
     },
     "settings": {
     "import/resolver": {
