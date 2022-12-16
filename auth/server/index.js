@@ -13,13 +13,13 @@ app.use('/api', router)
 
 const start = async () => {
   try {
-     mongoose.connect(
-      "mongodb+srv://user:user@cluster0.buo8hk5.mongodb.net/?retryWrites=true&w=majority",
-      {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-      }
-    );
+    await mongoose.connect(
+       "mongodb+srv://user:user@cluster0.buo8hk5.mongodb.net/?retryWrites=true&w=majority",
+       {
+         useNewUrlParser: true,
+         useUnifiedTopology: true,
+       }
+     );
     app.listen(5000, () => console.log("server started on 5000"));
   } catch (e) {
     console.log(e);
